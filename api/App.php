@@ -65,7 +65,7 @@ class Cerb5BlogLastActionAndAuditLogEventListener extends DevblocksEventListener
      */
     function handleEvent(Model_DevblocksEvent $event) {
         switch($event->id) {
-            case 'comment.action.create':
+            case 'comment.create':
               $this->newTicketComment($event);
               break;
 

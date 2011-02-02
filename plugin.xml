@@ -28,7 +28,7 @@
 			<params>
 				<param key="events">
 					<value>
-						<data key="comment.action.create" />
+						<data key="comment.create" />
 						<!-- <data key="ticket.reply.inbound" />
 						<data key="ticket.reply.outbound" /> -->
 						<data key="ticket.action.merge" />
