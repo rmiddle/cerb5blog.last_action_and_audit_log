@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tmx SYSTEM "tmx14.dtd">
+<tmx version="1.4">
+	<header datatype="winres" segtype="sentence" adminlang="en-us"
+		srclang="en-us" o-tmf="abc" />
+	<body>
+    <!-- Generic Text -->
+    <tu tuid='cerb5blog.last_action_and_audit_log.success'>
+      <tuv xml:lang="en_US"><seg>Saved Successfully</seg></tuv>
+    </tu>
+    <tu tuid='cerb5blog.last_action_and_audit_log.no'>
+      <tuv xml:lang="en_US"><seg>No</seg></tuv>
+    </tu>
+
+    <!-- Title Section -->
+    <tu tuid='cerb5blog.last_action_and_audit_log.title'>
+      <tuv xml:lang="en_US"><seg>Cerb5Blog Log</seg></tuv>
+    </tu>
+    <tu tuid='cerb5blog.last_action_and_audit_log.config.tab.audit.log'>
+      <tuv xml:lang="en_US"><seg>Audit Log Options:</seg></tuv>
+    </tu>
+    <tu tuid='cerb5blog.last_action_and_audit_log.config.tab.ticket.update.field'>
+      <tuv xml:lang="en_US"><seg>Update Date / Time Field Options:</seg></tuv>
+    </tu>
+    <tu tuid='cerb5blog.last_action_and_audit_log.config.tab.ticket.custom.field'>
+      <tuv xml:lang="en_US"><seg>Update Custom Fields:</seg></tuv>
+    </tu>
+
+    <!-- Choice of Audit Log Option inside the config -->
+    <tu tuid='cerb5blog.last_action_and_audit_log.config.tab.audit.comment'>
+      <tuv xml:lang="en_US"><seg>Record when a Comment is posted?</seg></tuv>
+    </tu>
+    <tu tuid='cerb5blog.last_action_and_audit_log.config.tab.audit.merge.new_ticket'>
+      <tuv xml:lang="en_US"><seg>Record "Merged from ticket #123 - Mask #xyz" in the combined ticket with all the old ticket numbers when it is merged?</seg></tuv>
+    </tu>
+
+    <!-- Text for Audit Log Types -->
+    <tu tuid='cerb5blog.last_action_and_audit_log.type.comment'>
+      <tuv xml:lang="en_US"><seg>Comment Posted</seg></tuv>
+    </tu>
+    <tu tuid='cerb5blog.last_action_and_audit_log.type.merge'>
+      <tuv xml:lang="en_US"><seg>Ticket Merged</seg></tuv>
+    </tu>
+
+    <!-- Text for Audit Log Posts -->
+    <tu tuid='cerb5blog.last_action_and_audit_log.post.merge.new_ticket'>
+      <tuv xml:lang="en_US"><seg>Merged from ticket # %d - Mask # %s</seg></tuv>
+    </tu>
+
+    <!-- Choice of Last Action Option inside the config -->
+    <tu tuid='cerb5blog.last_action_and_audit_log.config.tab.update.comment'>
+      <tuv xml:lang="en_US"><seg>Update when a Comment is posted?</seg></tuv>
+    </tu>
+    <tu tuid='cerb5blog.last_action_and_audit_log.config.tab.update.merge'>
+      <tuv xml:lang="en_US"><seg>Update when a ticket is merged?</seg></tuv>
+    </tu>
+
+
+    <!-- Error -->
+
+</body>
+</tmx>
+<!--
+
+-->

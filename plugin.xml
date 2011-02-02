@@ -1,0 +1,55 @@
+<!DOCTYPE plugin SYSTEM "../../libs/devblocks/plugin.dtd">
+<plugin>
+	<id>cerb5blog.last_action_and_audit_log</id>
+	<name>[Cerb5Blog.com] Last Action and Audit Log</name>
+	<description>Update Last Action and record extra items into the Audit Log</description>
+	<author>Robert Middleswarth</author>
+	<revision>7</revision>
+	<link>http://www.cerb5blog.com</link>
+	<image>plugin.png</image>
+
+	<!-- Plugin Dependencies -->
+	
+	<dependencies>
+		<require plugin_id="cerberusweb.core" version="5.0.0-rc1" />
+		<require plugin_id="cerberusweb.auditlog" version="4.0.0-alpha" />
+	</dependencies>
+
+	<extensions>
+ 
+		<!-- Event Listeners -->
+		<extension point="devblocks.listener.event">
+			<id>cerb5blog.last_action_and_audit_log.listeners</id>
+			<name>[Cerb5Blog.com] Last Action and Audit Log Listener</name>
+			<class>
+				<file>api/App.php</file>
+				<name>Cerb5BlogLastActionAndAuditLogEventListener</name>
+			</class>
+			<params>
+				<param key="events">
+					<value>
+						<data key="comment.action.create" />
+						<!-- <data key="ticket.reply.inbound" />
+						<data key="ticket.reply.outbound" /> -->
+						<data key="ticket.action.merge" />
+					</value>
+				</param>
+			</params>
+		</extension>
+
+		<!-- Config Tabs -->
+		<extension point="cerberusweb.config.tab">
+			<id>cerb5blog.last_action_and_audit_log.config.tab</id>
+			<name>[Cerb5Blog.com] Last Action and Audit Log Tab</name>
+			<class>
+				<file>api/App.php</file>
+				<name>Cerb5BlogLastActionAndAuditLogConfigTab</name>
+			</class>
+			<params>
+				<param key="uri" value="cerb5blog_log" />
+				<param key="title" value="cerb5blog.last_action_and_audit_log.title" />
+			</params>
+		</extension>
+
+	</extensions>
+</plugin>
